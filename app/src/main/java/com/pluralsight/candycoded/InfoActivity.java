@@ -34,6 +34,13 @@ public void createMapIntent(View view)
         startActivity(mapIntent);
     }
 }
+    public void createPhoneIntent(View view){
+
+        Intent intent=new Intent(Intent.ACTION_DIAL);
+        Uri phone=Uri.parse("tel:0123456789");
+        intent.setData(phone);
+        startActivity(intent);
+    }
     // ***
     // TODO - Task 2 - Launch the Google Maps Activity
     // ***
